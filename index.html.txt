@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Truly WTF is with this Study Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Study Diary</h1>
+    <p>This is where I document what I'm learning.</p>
+    <a href="posts/post1.html">First Post</a>
+</body>
+</html>
