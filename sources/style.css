@@ -655,6 +655,15 @@ footer a:hover, footer a:focus {
     background: url('img-bottle.png') no-repeat center top;
     background-size: 1.65em;
   }
+ 
+    .Web_Pen_intro h2 {
+    font-size: 3.75em;
+    padding-top: 4.25em;
+    margin-top: 0.85em;
+    margin-bottom: 0em;
+    line-height: 1.275em;
+    background-size: 1.65em;
+  }
   
   .summary p:nth-child(2) {
     text-align: center;
