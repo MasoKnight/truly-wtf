@@ -3,7 +3,7 @@ title: Reading
 description: Notes on things I'm reading.
 ---
 
-Notes still to be written up.
+Notes still to be written up..
 
 Currently reading:
 
