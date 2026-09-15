@@ -1,0 +1,228 @@
+/* truly.wtf — simple stylesheet
+   Edit colors and fonts here. Everything else lives in markdown. */
+
+:root {
+  --bg: #fbfbf9;
+  --text: #2a2a28;
+  --muted: #6b6b66;
+  --accent: #b5482a;
+  --border: #e6e3dc;
+  --max-width: 42rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover, a:focus {
+  color: var(--text);
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ---------- header ---------- */
+
+header.site-header {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+header.site-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+header.site-header h1 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+header.site-header p.tagline {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---------- main content ---------- */
+
+main {
+  min-height: 50vh;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.25rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+ul, ol {
+  margin: 0 0 1.1em;
+  padding-left: 1.4em;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.1em 1.2em;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--border);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: #22201d;
+  color: #f2efe8;
+  padding: 1rem 1.1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5em 0;
+}
+
+/* ---------- post list (homepage) ---------- */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.post-list li:first-child {
+  padding-top: 0;
+}
+
+.post-list .post-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  min-width: 6rem;
+  order: -1;
+}
+
+.post-list a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- single post ---------- */
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: -0.5rem 0 2rem;
+}
+
+.post-title {
+  margin-bottom: 0.25rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- footer ---------- */
+
+footer.site-footer {
+  margin: 4rem 0 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer.site-footer a {
+  color: var(--muted);
+}
+
+footer.site-footer a:hover {
+  color: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18;
+    --text: #ece9e3;
+    --muted: #9c988f;
+    --accent: #e0805c;
+    --border: #33312c;
+  }
+
+  code {
+    background: #2a2824;
+  }
+}
